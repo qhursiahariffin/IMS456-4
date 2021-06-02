@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+<title>CONTACT| KASMARINI BIOGRAPHY</title>
+<meta name="description" content="Biography Website">
+  <meta name="keywords" content="scholar biography, archiving, web preservation">
+  <meta name="author" content="Qhursiah, Qhursiah Ariffin">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="shortcut icon" href="image/icon.png" type="image/x-icon">
+
+
+</head>
+<body align="center">
+
+<div class=header>
+<header> <img src="image/h1.png" alt="header" width="100%" height="280px"/> </header>
+<h1 font="calibri">KASMARINI'S BIOGRAPHY</h1>
+</div>
+
+<nav>
+	<ul>
+	<a href="index.html"> HOME <b>|</b></a>
+	<a href="about.html"> ABOUT <b>|</b></a>
+	<a href="education.html"> EDUCATION <b>|</b></a>
+	<a href="awards.html"> AWARDS&ACHIEVEMENT <b>|</b></a>
+	<a href="contact.html"> CONTACT </a>
+	</ul>
+</nav>
+
+<h3>CONTACT FORM</h3>
+
+<div class="container">
+  <form target="_blank" action="action.html">
+    <label for="fname">Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Email</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+<br><br><br><br><br><br><br>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<footer>
+  <p><small>Page last updated on 1 June 2021. <br>Disclaimer: The recommended browser is Internet Edge, Chrome. |
+  <br>The recommended display for this website are 1920x1080 |<br>This website are designed for IMS456 Individual Assignment.</small></p>
+</footer>
+
+
+
+</body>
+</html>
